@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noah | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Hi, I&apos;m Noah</h1>
+      <nav class="socials" aria-label="Social links">
+        <a
+          href="https://github.com/NoahWolk1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <img class="social-icon" src="./github.png" alt="" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/noah-wolk-a49716323/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <img class="social-icon" src="./linkedin.png" alt="" />
+        </a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="panel" aria-labelledby="projects-title">
+        <h2 id="projects-title">Some of my projects</h2>
+        <div class="cards three-col">
+          <a
+            class="card project-card project-link"
+            href="https://anygraphfrontend2.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open AnyGraph"
+          >
+            <video
+              class="project-video"
+              src="./anygraph_upload_demo.mov"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            ></video>
+            <span class="project-title">AnyGraph</span>
+          </a>
+          <a
+            class="card project-card project-link"
+            href="https://urgency-frontend.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Triage project"
+          >
+            <video
+              class="project-video"
+              src="./anygraph_demo.mov"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            ></video>
+            <span class="project-title">UrgencyFlow</span>
+          </a>
+          <article class="card project-card">
+            <video
+              class="project-video"
+              src="./chef_upload_demo.mov"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            ></video>
+            <span class="project-title">Heaven&apos;s Kitchen</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="internships-title">
+        <h2 id="internships-title">Internships</h2>
+        <div class="cards one-col">
+          <article class="card internship-card">
+            <div class="card-head">
+              <h3 class="brand">Narb</h3>
+              <img class="logo-dot" src="./narb.jpeg" alt="Narb logo" />
+            </div>
+            <p>
+              Built the frontend and backend of mobile applications in a
+              collaborative team environment. Built a scalable LLM pipeline.
+            </p>
+          </article>
+
+          <article class="card internship-card">
+            <div class="card-head">
+              <h3 class="brand">Finz</h3>
+              <img class="logo-dot" src="./finz.jpeg" alt="Finz logo" />
+            </div>
+            <p>
+              Developed and implemented a credit card fraud detection model.
+              Used LLMs to classify Plaid transaction data into categories,
+              predicting business cash flow.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel about-panel" aria-labelledby="about-title">
+        <h2 id="about-title">About me</h2>
+        <p class="about-copy">
+          I&apos;m a full stack engineer who loves making things. I like
+          exploring new tools and implementing them into my projects. In my
+          free time I enjoy running with friends, and learning new things.
+        </p>
+        <img class="about-photo" src="./Me.jpg" alt="Photo of Noah" />
+      </section>
+    </main>
+  </body>
+</html>

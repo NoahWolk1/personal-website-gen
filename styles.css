@@ -157,6 +157,7 @@ body {
 .internship-card {
   min-height: 344px;
   padding: 0 22px 48px;
+  overflow: hidden;
 }
 
 .card-head {
@@ -186,6 +187,54 @@ body {
   margin: 22px 0 0;
   font-size: clamp(1.05rem, 2.4vw, 2rem);
   line-height: 1.1;
+}
+
+.tech-carousel {
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 7%,
+    #000 93%,
+    transparent 100%
+  );
+}
+
+.tech-track {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  animation: tech-scroll 18s linear infinite;
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f7f7f7;
+  border: 1px solid #d8d8d8;
+  border-radius: 999px;
+  padding: 8px 12px;
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+.tech-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+@keyframes tech-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .about-panel {
@@ -258,6 +307,25 @@ body {
     padding: 0 14px 28px;
   }
 
+  .tech-carousel {
+    margin-top: 14px;
+  }
+
+  .tech-track {
+    gap: 10px;
+    animation-duration: 15s;
+  }
+
+  .tech-pill {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .tech-icon {
+    width: 18px;
+    height: 18px;
+  }
+
   .card-head {
     min-height: 44px;
   }
@@ -283,5 +351,11 @@ body {
     bottom: 14px;
     width: clamp(88px, 26vw, 150px);
     border-width: 1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-track {
+    animation: none;
   }
 }
